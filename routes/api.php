@@ -22,4 +22,3 @@ $router->onHttpError(function ($code, $router) {
 });
 
 $router->dispatch();
-die;
