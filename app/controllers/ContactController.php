@@ -8,6 +8,8 @@ class ContactController extends Controller
 {
     public function __construct($request, $response)
     {
+        print_r($request->headers());
+        die;
         $this->checkAuthToken($request, $response);
     }
 
