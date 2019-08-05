@@ -1,14 +1,20 @@
 <?php
 
-namespace Helpers;
+namespace App\Helpers;
 
 use Firebase\JWT\JWT;
 
 class JWTHelper
 {
-    private static $secret_key = 'Sdw1s9x8@';
-    private static $encrypt = ['HS256'];
+    private static $secret_key;
+    private static $encrypt;
     private static $aud = null;
+
+    public function __construct()
+    {
+        self::$secret_key = getenv("SECRETKEY");
+        self::$encrypt = getenv("ENCRYPT");
+    }
 
     public static function signIn($data)
     {

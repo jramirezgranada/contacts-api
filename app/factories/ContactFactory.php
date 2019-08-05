@@ -1,10 +1,10 @@
 <?php
 
-namespace Factories;
+namespace App\Factories;
 
-use Helpers\ContactHelper;
-use Models\Contact;
-use Validators\FormValidator;
+use App\Helpers\ContactHelper;
+use App\Models\Contact;
+use App\Validators\FormValidator;
 
 class ContactFactory implements FactoryInterface
 {

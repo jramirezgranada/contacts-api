@@ -1,8 +1,8 @@
 <?php
 
-namespace Controllers;
+namespace App\Controllers;
 
-use Models\ApiUser;
+use App\Models\ApiUser;
 
 class Controller
 {
@@ -25,7 +25,7 @@ class Controller
         }
 
         $token = str_replace("Bearer ", "", $headers["Authorization"]);
-        
+
         $apiUser = ApiUser::whereToken($token)->first();
 
         if (!$apiUser) {

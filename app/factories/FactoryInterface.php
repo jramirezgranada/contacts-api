@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Factories;
+namespace App\Factories;
 
 
 interface FactoryInterface

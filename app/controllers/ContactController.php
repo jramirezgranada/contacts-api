@@ -1,8 +1,8 @@
 <?php
 
-namespace Controllers;
+namespace App\Controllers;
 
-use Factories\ContactFactory;
+use App\Factories\ContactFactory;
 
 class ContactController extends Controller
 {

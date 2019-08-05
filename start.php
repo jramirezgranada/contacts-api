@@ -1,9 +1,11 @@
 <?php
 
 require 'vendor/autoload.php';
-require 'config/database.php';
 
-use Models\Database;
+$dotenv = Dotenv\Dotenv::create(__DIR__);
+$dotenv->load();
+
+use App\Models\Database;
 
 new Database();
 

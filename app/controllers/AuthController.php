@@ -1,12 +1,13 @@
 <?php
 
 
-namespace Controllers;
+namespace App\Controllers;
 
 
-use Helpers\JWTHelper;
-use Models\ApiUser;
-use Validators\FormValidator;
+use App\Helpers\JWTHelper;
+use App\Models\ApiUser;
+use App\Validators\FormValidator;
+
 
 class AuthController
 {

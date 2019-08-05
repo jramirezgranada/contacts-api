@@ -2,13 +2,13 @@
 
 $router = new \Klein\Klein();
 $router->with('/api/', function () use ($router) {
-    $router->get('contacts', 'Controllers\ContactController@index');
-    $router->post('contacts', 'Controllers\ContactController@store');
-    $router->get('contacts/[:id]', 'Controllers\ContactController@get');
-    $router->delete('contacts/[:id]', 'Controllers\ContactController@delete');
-    $router->patch('contacts/[:id]', 'Controllers\ContactController@update');
+    $router->get('contacts', 'App\Controllers\ContactController@index');
+    $router->post('contacts', 'App\Controllers\ContactController@store');
+    $router->get('contacts/[:id]', 'App\Controllers\ContactController@get');
+    $router->delete('contacts/[:id]', 'App\Controllers\ContactController@delete');
+    $router->patch('contacts/[:id]', 'App\Controllers\ContactController@update');
 
-    $router->post('login', 'Controllers\AuthController@login');
+    $router->post('login', 'App\Controllers\AuthController@login');
 });
 
 $router->onHttpError(function ($code, $router) {

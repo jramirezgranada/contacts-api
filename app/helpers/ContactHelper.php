@@ -1,9 +1,9 @@
 <?php
 
-namespace Helpers;
+namespace App\Helpers;
 
-use Models\ContactEmail;
-use Models\ContactPhone;
+use App\Models\ContactEmail;
+use App\Models\ContactPhone;
 
 class ContactHelper
 {
