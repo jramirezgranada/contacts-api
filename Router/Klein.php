@@ -643,7 +643,7 @@ class Klein
             }
 
         } catch (Throwable $e) { // PHP 7 compatibility
-            $this->error($e->getMessage());
+            $this->error($e);
         } catch (Exception $e) { // TODO: Remove this catch block once PHP 5.x support is no longer necessary.
             $this->error($e);
         }

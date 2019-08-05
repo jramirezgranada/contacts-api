@@ -70,6 +70,7 @@ class ContactFactory implements FactoryInterface
         }
 
         $contact = Contact::find($contactId);
+        $contact->load('emails', 'phones');
 
         if (!$contact) {
             return [
