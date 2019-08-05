@@ -1,6 +1,6 @@
 <?php
 
-require 'vendor/autoload.php';
+include 'vendor/autoload.php';
 
 $dotenv = Dotenv\Dotenv::create(__DIR__);
 $dotenv->load();
@@ -9,4 +9,4 @@ use App\Models\Database;
 
 new Database();
 
-require 'routes/api.php';
+include 'routes/api.php';
