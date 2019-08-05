@@ -15,9 +15,8 @@ class Controller
     public function checkAuthToken($req, $resp)
     {
         $headers = $req->headers();
-        print_r($headers);
-        die;
-        if (!isset($headers["Authorization"])) {
+
+        if (!isset($headers["Token"])) {
             return $resp->json([
                 "status" => "error",
                 "code" => 403,
@@ -25,7 +24,7 @@ class Controller
             ]);
         }
 
-        $token = str_replace("Bearer ", "", $headers["Authorization"]);
+        $token = str_replace("Bearer ", "", $headers["Token"]);
 
         $apiUser = ApiUser::whereToken($token)->first();
 
