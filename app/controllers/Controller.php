@@ -15,7 +15,8 @@ class Controller
     public function checkAuthToken($req, $resp)
     {
         $headers = $req->headers();
-
+        print_r($headers);
+        die;
         if (!isset($headers["Authorization"])) {
             return $resp->json([
                 "status" => "error",
