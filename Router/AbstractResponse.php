@@ -272,8 +272,7 @@ abstract class AbstractResponse
     public function requireUnlocked()
     {
         if ($this->isLocked()) {
-            $this->unlock();
-            //throw new LockedResponseException('Response is locked');
+            throw new LockedResponseException('Response is locked');
         }
 
         return $this;
