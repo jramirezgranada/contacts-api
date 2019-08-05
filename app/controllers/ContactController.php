@@ -8,7 +8,7 @@ class ContactController extends Controller
 {
     public function __construct($request, $response)
     {
-        //$this->checkAuthToken($request, $response);
+        $this->checkAuthToken($request, $response);
     }
 
     /**
