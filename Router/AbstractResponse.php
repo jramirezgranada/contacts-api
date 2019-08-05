@@ -285,7 +285,7 @@ abstract class AbstractResponse
      */
     public function lock()
     {
-        $this->locked = false;
+        $this->locked = true;
 
         return $this;
     }
