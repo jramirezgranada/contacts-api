@@ -16,6 +16,7 @@
   "autoload": {
     "psr-4": {
       "App\\": "app/",
+      "App\\Models\\": "app/models/",
       "Klein\\": "Router/"
     }
   }
