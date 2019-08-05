@@ -13,6 +13,7 @@ return array(
     'Psr\\SimpleCache\\' => array($vendorDir . '/psr/simple-cache/src'),
     'Psr\\Container\\' => array($vendorDir . '/psr/container/src'),
     'Models\\' => array($baseDir . '/app/models'),
+    'Middlewares\\' => array($baseDir . '/app/middlewares'),
     'Klein\\' => array($baseDir . '/Router'),
     'Illuminate\\Support\\' => array($vendorDir . '/illuminate/support'),
     'Illuminate\\Database\\' => array($vendorDir . '/illuminate/database'),

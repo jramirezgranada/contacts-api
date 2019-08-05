@@ -30,6 +30,7 @@ class ComposerStaticInitc5dff22171b984e1a086e3595f5bbab1
         'M' => 
         array (
             'Models\\' => 7,
+            'Middlewares\\' => 12,
         ),
         'K' => 
         array (
@@ -90,6 +91,10 @@ class ComposerStaticInitc5dff22171b984e1a086e3595f5bbab1
         'Models\\' => 
         array (
             0 => __DIR__ . '/../..' . '/app/models',
+        ),
+        'Middlewares\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/app/middlewares',
         ),
         'Klein\\' => 
         array (

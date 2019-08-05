@@ -11,4 +11,14 @@ $router->with('/api/', function () use ($router) {
     $router->post('login', 'Controllers\AuthController@login');
 });
 
+$router->onHttpError(function ($code, $router) {
+    return $router->response()->json(
+        [
+            "status" => "error",
+            "code" => $code,
+            "message" => "There is an error, please check the error code"
+        ]
+    );
+});
+
 $router->dispatch();

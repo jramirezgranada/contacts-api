@@ -19,7 +19,8 @@
       "Models\\": "app/models/",
       "Klein\\": "Router/",
       "Validators\\": "app/validators/",
-      "Helpers\\": "app/helpers/"
+      "Helpers\\": "app/helpers/",
+      "Middlewares\\": "app/middlewares/"
     }
   }
 }

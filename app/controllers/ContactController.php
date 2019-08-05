@@ -4,8 +4,13 @@ namespace Controllers;
 
 use Factories\ContactFactory;
 
-class ContactController
+class ContactController extends Controller
 {
+    public function __construct($request, $response)
+    {
+        $this->checkAuthToken($request, $response);
+    }
+
     /**
      * Get all contacts wit its emails and phone numbers
      * @param $request

@@ -14,11 +14,11 @@ class JWTHelper
     {
         $time = time();
 
-        $token = array(
+        $token = [
             'exp' => $time + (60 * 60),
             'aud' => self::Aud(),
             'data' => $data
-        );
+        ];
 
         return JWT::encode($token, self::$secret_key);
     }

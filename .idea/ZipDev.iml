@@ -5,6 +5,7 @@
       <sourceFolder url="file://$MODULE_DIR$/Router" isTestSource="false" packagePrefix="Klein\" />
       <sourceFolder url="file://$MODULE_DIR$/app/validators" isTestSource="false" packagePrefix="Validators\" />
       <sourceFolder url="file://$MODULE_DIR$/app/helpers" isTestSource="false" packagePrefix="Helpers\" />
+      <sourceFolder url="file://$MODULE_DIR$/app/middlewares" isTestSource="false" packagePrefix="Middlewares\" />
       <sourceFolder url="file://$MODULE_DIR$/app/models" isTestSource="false" packagePrefix="Models\" />
       <sourceFolder url="file://$MODULE_DIR$/app/factories" isTestSource="false" packagePrefix="Factories\" />
       <sourceFolder url="file://$MODULE_DIR$/app/controllers" isTestSource="false" packagePrefix="Controllers\" />

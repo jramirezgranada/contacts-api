@@ -144,6 +144,15 @@ class Route
         }
     }
 
+    public function runMiddlewares($middlewares)
+    {
+        $midds = explode(":", $middlewares);
+
+        foreach ($midds as $midd) {
+
+        }
+    }
+
     /**
      * Get the path
      *

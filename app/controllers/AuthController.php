@@ -33,7 +33,7 @@ class AuthController
         }
 
         $apiUser = ApiUser::where('username', $data["username"])
-            ->where('password', $data["password"])
+            ->where('password', md5($data["password"]))
             ->first();
 
         if (!$apiUser) {
