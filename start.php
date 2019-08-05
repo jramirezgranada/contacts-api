@@ -5,6 +5,6 @@ require 'vendor/autoload.php';
 $dotenv = Dotenv\Dotenv::create(__DIR__);
 $dotenv->load();
 
-new App\Models\Database();
+//new App\Models\Database();
 
 require 'routes/api.php';
