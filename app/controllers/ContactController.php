@@ -8,10 +8,11 @@ class ContactController extends Controller
 {
     public function __construct($request, $response)
     {
-        $isNotAuthenticated = $this->checkAuthToken($request, $response);
+        $this->checkAuthToken($request, $response);
+        /*$isNotAuthenticated = $this->checkAuthToken($request, $response);
         if (is_array($isNotAuthenticated)) {
             return $response->json($isNotAuthenticated);
-        }
+        }*/
     }
 
     /**

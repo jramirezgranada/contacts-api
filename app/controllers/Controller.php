@@ -29,11 +29,11 @@ class Controller
         $apiUser = ApiUser::whereToken($token)->first();
 
         if (!$apiUser) {
-            return [
+            return $resp->json([
                 "status" => "error",
                 "code" => 403,
                 "message" => "Token is invalid, please try again"
-            ];
+            ]);
         }
     }
 }
